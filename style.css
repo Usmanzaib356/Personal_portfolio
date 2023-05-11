@@ -1,0 +1,409 @@
+/* Logo Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+/* Home Text Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Nag+Mundari&display=swap');
+/* portFolio cards css  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/* About Font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+/* Navbar css start */
+#navbarNavDropdown {
+  justify-content: end;
+}
+
+#navlogo {
+  font-size: 1.7em;
+  color: #4D148C;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#navlogo2 {
+  color: #FF6600;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.navbar-nav {
+  font-size: 1em;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#navbar-nav .nav-link {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+#navbar-nav .nav-link:hover {
+  color: #FF6600;
+  transform: translateY(-5px);
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 450px) {
+  #navbarNavDropdown {
+    justify-content: flex-start;
+  }
+
+  #navlogo {
+    font-size: 1.3em;
+  }
+}
+
+/* Navbar css end */
+
+
+/* Home css start */
+.homeSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 1em;
+  left: -100%;
+  position: relative;
+  animation: slide-in 1.5s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  from {
+    left: -50%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+.hometext h1 {
+  text-align: center;
+  font-size: 3.5em;
+  /* font-family: 'Noto Sans Nag Mundari', sans-serif; */
+  font-family: 'Libre Baskerville', serif;
+}
+
+.hometext span {
+  color: #FF6600;
+}
+
+.image img {
+  height: 26em;
+  width: 20em;
+  border-radius: 10px;
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width:450px) {
+
+  .homeSection {
+    position: relative;
+    top: -3.5em;
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+  }
+
+  .hometext h1 {
+    font-size: 2em;
+  }
+}
+
+/* Home css end */
+
+
+/* Portfolio css Start */
+
+.portfolioText {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 1.5em;
+
+}
+
+.card5 {
+  width: 270px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+}
+
+.card5:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #8f7eff, #44a4ff);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card5:hover:before {
+  opacity: 0.5;
+}
+
+.card5-content {
+  width: 170px;
+  height: 280px;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+
+}
+
+.card5-content span {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.card5:hover .card5-content {
+  transform: translate(-50%, -50%);
+}
+
+.card5 a {
+  border-radius: 8px;
+}
+
+
+/* Mobile Screen */
+@media screen and (max-width:450px) {
+  .portfolio {
+    gap: 2.5em;
+  }
+}
+
+/* Portfolio css End */
+
+
+
+
+/* skills Css Start */
+
+#skillsText {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.SkillsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  gap: 3.2em;
+}
+
+.cards {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 18px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Roboto Slab', serif;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 50px;
+  height: 250px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  width: 120px;
+  font-size: 16px;
+}
+
+.skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.skill-percent-number {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+/* skills Css End */
+
+
+/* About Css Start */
+
+
+.aboutText {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.about {
+  justify-content: center;
+  display: flex;
+}
+
+.paragraph {
+  width: 50em;
+  font-size: 1.3em;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:450px) {
+
+  .paragraph {
+    width: 15em;
+    text-align: justify;
+  }
+
+}
+
+/* About Css End */
+
+
+/* Contact Css start */
+
+
+.contactText {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  /* box-shadow: 0px 0px 15px #00000027; */
+  padding: 15px 10px;
+  border-radius: 5em;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.github {
+  background-color: #333;
+}
+
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
+.footers {
+  border: 1px solid black;
+  border: 10px;
+}
+
+/* Contact Css End */
