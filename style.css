@@ -407,4 +407,23 @@
   border: 10px;
 }
 
+
+/* Moile size */
+
+@media screen and (max-width:450px) {
+
+  .contactText {
+    position: relative;
+    top: -5em;
+  }
+
+  .contact {
+    position: relative;
+    top: -5em;
+  }
+
+
+}
+
+
 /* Contact Css End */
