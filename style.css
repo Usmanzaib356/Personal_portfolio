@@ -292,6 +292,7 @@
 }
 
 .paragraph {
+  margin: 2em;
   width: 50em;
   font-size: 1.3em;
   text-align: justify;
