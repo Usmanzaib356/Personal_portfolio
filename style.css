@@ -413,14 +413,16 @@
 
   .contactText {
     position: relative;
-    top: -5em;
+    top: -1.5em;
   }
 
   .contact {
     position: relative;
-    top: -5em;
+    top: -1em;
   }
-
+.footers{
+  
+}
 
 }
 
