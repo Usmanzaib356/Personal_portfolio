@@ -13,7 +13,6 @@
 }
 
 
-
 /* Navbar css start */
 #navbarNavDropdown {
   justify-content: end;
@@ -50,6 +49,8 @@
   #navbarNavDropdown {
     justify-content: flex-start;
   }
+
+  
 
   #navlogo {
     font-size: 1.3em;
